@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+section {
+    width: 850px;
+    height: 580px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+section img {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+section .explaination {
+    padding: 40px 50px;
+
+}
+section .explaination > span {
+    font-weight: 200;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+section .explaination > h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    width: 300px;
+}
+section .explaination > p {
+    width: 75%;
+    margin: 20px 0;
+    font-size: 17px;
+    color: rgb(128, 128, 128);
+    line-height: 1.7;
+}
+section .explaination .price {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+section .explaination .price h2 {
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+section .explaination .price span {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+section .explaination button i {
+    color: white;
+    margin-right: 20px;
+}
+section .explaination button {
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    color: white;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.5s;
+}
+section .explaination button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+@media (max-width: 915px) {
+    .container {
+        align-items: flex-start;
+        height: 115vh;
+    }
+    section {
+        flex-direction: column;
+        width: 100%;
+        height: 110vh;
+        flex-grow: 1;
+        padding: 20px;
+        margin: 0 100px;
+    }
+    .image img {
+        width: 100%;
+        height: 300px;
+    }
+}
